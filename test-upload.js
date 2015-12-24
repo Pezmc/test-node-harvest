@@ -2,9 +2,9 @@ var config = require('./config.js')
 
 var Harvest = require('../node-harvest/'),
     harvest = new Harvest({
-        subdomain: config.harvest.subdomain,
-        email: config.harvest.email,
-        password: config.harvest.password
+        subdomain: config.harvest_http_auth.subdomain,
+        email: config.harvest_http_auth.email,
+        password: config.harvest_http_auth.password
     });
     var Expenses = harvest.Expenses;
 
@@ -21,3 +21,4 @@ var Harvest = require('../node-harvest/'),
 
     	console.log(reply);
 	});
+

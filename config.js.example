@@ -1,8 +1,16 @@
 module.exports = {
-	harvest: {
+	harvest_http_auth: {
 		subdomain: 'SUBDOMAIN',
 		email: 'EMAIL',
-		password: 'PASSWORD'
+		password: 'PASSWORD',
+
+	},
+	// See https://platform.harvestapp.com/oauth2_clients
+	harvest_oauth: {
+		subdomain: 'SUBDOMAIN',
+      	client_id: "APP CLIENT ID FROM HARVEST",
+      	secret: "APP SECRET ID FROM HARVEST",
+      	redirect_uri: "URL TO REDIRECT TO AFTER OAUTH"
 	},
     expense_id: 100 // id of expense to test file upload against
 }
