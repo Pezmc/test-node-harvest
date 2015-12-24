@@ -1,0 +1,8 @@
+module.exports = {
+	harvest: {
+		subdomain: 'SUBDOMAIN',
+		email: 'EMAIL',
+		password: 'PASSWORD'
+	},
+    expense_id: 100 // id of expense to test file upload against
+}
